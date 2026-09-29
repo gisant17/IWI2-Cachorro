@@ -1,0 +1,55 @@
+
+#quadradinho {
+    width: 700px;
+    height: 100px;
+    background-color: #000485;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border-radius: 20px;
+    background-image: url(image/dog.png);
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#esquerda{
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color:#ffd470;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #d37100;
+}
+
+#direita{
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color:#ffd470;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #d37100;
+}
+
+#cima{
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color:#ffd470;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #d37100;
+}
+
+#baixo{
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #ffd470;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #d37100;
+}

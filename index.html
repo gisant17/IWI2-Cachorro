@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Desafio Interface Web II</title>
+    <link rel="stylesheet" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script> 
+  $(document).ready(function(){
+    let quadradinho = $('#quadradinho')
+    let posicaoX = 250;
+    let posicaoY = 250;
+    const distancia = 30;
+
+    $('#cima').click(function(){
+      posicaoY -= distancia;
+      atualizarPosicao();
+    });
+
+    $('#baixo').click(function(){
+      posicaoY += distancia;
+      atualizarPosicao();
+    });
+
+    $('#esquerda').click(function(){
+      posicaoX -= distancia;
+      atualizarPosicao();
+    });
+
+    $('#direita').click(function(){
+      posicaoX += distancia;
+      atualizarPosicao();
+    });
+
+    function atualizarPosicao(){
+      quadradinho.css({left: posicaoX + 'px', top: posicaoY + 'px'});
+    }
+  });
+  </script> 
+  </head>
+  <body>
+
+    <button id="cima">Cima</button>
+    <button id="baixo">Baixo</button>
+    <button id="direita">Direita</button>
+    <button id="esquerda">Esquerda</button>
+    <div id="quadradinho"></div>
+  
+  
+  </body>
+  </html>
